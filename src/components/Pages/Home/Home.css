@@ -1,0 +1,18 @@
+.banner {
+    width: 100vw;
+    height: 35vh;
+    background-image: url('../../../assets/banner-barbearia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    /* Modo LIGHT e DARK para a cor de fundo do banner
+    Só aparecerá caso a imagem do banner não carregue */
+    .light__banner {
+        background-color: var(--cor-light);
+    }
+
+    .dark__banner {
+        background-color: var(--cor-dark);
+    }

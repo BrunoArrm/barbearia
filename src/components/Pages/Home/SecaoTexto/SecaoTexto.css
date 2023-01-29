@@ -1,0 +1,42 @@
+.light__secaoTexto{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px;
+    background-color: var(--cor-light);
+    color: var(--cor-dark);
+}
+
+.dark__secaoTexto{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px;
+    background-color: var(--cor-dark);
+    color: var(--cor-light);
+}
+
+    /* .light__secaoTexto {
+        color: var(--cor-light);
+    } */
+
+.secaoTexto--limitador {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.assinatura {
+    color: var(--cor-detalhe);
+    font-family: 'Great Vibes', Poppins, sans-serif;
+    font-size: 4rem;
+}

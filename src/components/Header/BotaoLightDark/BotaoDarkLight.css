@@ -1,0 +1,56 @@
+
+.light__header--toogle {
+border: 3px solid var(--cor-detalhe);
+background-color: var(--cor-light);
+color: var(--cor-texto);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+padding: 10px 20px 10px 20px;
+border-radius: 50px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.dark__header--toogle {
+border: 3px solid var(--cor-detalhe);
+background-color: var(--cor-dark);
+color: var(--cor-light);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+padding: 10px 20px 10px 20px;
+border-radius: 50px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.light__header--toogle:hover {
+box-shadow: 0px 0px 2px 1px rgb(47, 0, 255);
+}
+
+.dark__header--toogle:hover {
+    box-shadow: 0px 0px 2px 1px rgb(47, 0, 255);
+}
+
+.light__toogle--img {
+    background-image: url('../../../assets/moon.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dark__toogle--img {
+    background-image: url('../../../assets/sun.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+:root {
+  --cor-detalhe: #B2987D;
+  --cor-texto: #000;
+  --cor-light: #fff;
+  --cor-dark: #252323;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  --cor-detalhe: #B2987D;
+  --cor-texto: #000;
+  --cor-light: #fff;
+  --cor-dark: #252323;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "Sans-serif";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.light__header--toogle {
+  border: 3px solid var(--cor-detalhe);
+  background-color: var(--cor-light);
+  color: var(--cor-texto);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .dark__header--toogle {
+  border: 3px solid var(--cor-detalhe);
+  background-color: var(--cor-dark);
+  color: var(--cor-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
   }
-}
+  
+  /* //  teste */
+  .header--toogle:hover {
+  box-shadow: 0px 0px 2px 1px rgb(47, 0, 255);
+  }
+  
+  /* Troca de ícone para o modo DARK e o modo LIGHT */
+  .light__toogle--img {
+      background-image: url('./assets/moon.png');
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .dark__toogle--img {
+      background-image: url('./assets/sun.png');
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
